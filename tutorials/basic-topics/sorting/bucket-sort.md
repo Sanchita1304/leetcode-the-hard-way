@@ -39,10 +39,13 @@ Bucket sort is a non-comparative sorting algorithm that works by distributing el
 
 We can understand the Bucket Sort by using Scatter-Gather Approach.
 
-![image](https://github.com/wingkwong/leetcode-the-hard-way/assets/90080911/bf034ec0-bb20-45b4-9cbe-4ea16dbec03c)
+![example sort](https://github.com/Sanchita1304/leetcode-the-hard-way/assets/90080911/99c015ae-9d4a-4f45-bbe9-b4b3cf80aa7a)
 
 In the above example, the unsorted array is given. 
-We have to create buckets with a range from 0 to 25. The buckets range are 0-5, 5-10, 10-15, 15-20, 20-25. After creating buckets we have to sort the buckets using different sorting algorithms of your own choice. After sorting, gather the sorted elements from each bucket in order.
+- We have to create buckets with a range from 0 to 25. 
+- The buckets range are 0-5, 5-10, 10-15, 15-20, 20-25. 
+- After creating buckets we have to sort the buckets using different sorting algorithms of your own choice.
+- After sorting, gather the sorted elements from each bucket in order.
 
 ## Example: [Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
 
@@ -93,6 +96,8 @@ In this code:
 - Finally, we gather the sorted elements by iterating through the buckets and reconstructing the sorted array.
 
 **Time Complexity : $$O(N)$$**
+**Space Complexity : $$O(n+k)$$**
+Here, "n" is the number of elements in the input array 'nums' and "k" is the range of values in the array.
 
 Bucket Sort is useful for sorting when the input data is uniformly distributed across a range of values.
 
